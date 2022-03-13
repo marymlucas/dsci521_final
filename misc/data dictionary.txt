@@ -1,0 +1,42 @@
+Final Dataframe Description (final_df.csv)
+COVID-19 Reported Patient Impact and Hospital Capacity by State Timeseries from HealthData.gov
+state: The two digit state code.
+date: The date of the report.
+critical_staffing_shortage_today_yes: Number of hospitals reporting a critical staffing shortage today in this state.
+critical_staffing_shortage_today_no: Number of hospitals reporting as not having a critical staffing shortage today in this state.
+critical_staffing_shortage_today_not_reported: Number of hospitals not reporting staffing shortage today status in this state.
+critical_staffing_shortage_anticipated_within_week_yes: Number of hospitals reporting that they anticipate a critical staffing shortage within a week in this state.
+critical_staffing_shortage_anticipated_within_week_no: Number of hospitals reporting that they anticipate a critical staffing shortage within a week in this state.
+critical_staffing_shortage_anticipated_within_week_not_reported: Number of hospitals not reporting staffing shortage within week status in this state.
+hospital_onset_covid: Total current inpatients with onset of suspected or laboratory-confirmed COVID-19 fourteen or more days after admission for a condition other than COVID-19 in this state.
+hospital_onset_covid_coverage: Number of hospitals reporting "hospital_onset_covid" in this state
+inpatient_beds: Reported total number of staffed inpatient beds including all overflow and surge/expansion beds used for inpatients (includes all ICU beds) in this state.
+inpatient_beds_coverage: Number of hospitals reporting "inpatient_beds" in this state.
+inpatient_beds_used: Reported total number of staffed inpatient beds that are occupied in this state.
+inpatient_beds_used_coverage: Number of hospitals reporting "inpatient_beds_used" in this state
+inpatient_beds_used_covid: Reported patients currently hospitalized in an inpatient bed who have suspected or confirmed COVID-19 in this state
+inpatient_beds_used_covid_coverage: Number of hospitals reporting "inpatient_beds_used_covid" in this state.
+previous_day_admission_adult_covid_confirmed: Number of patients who were admitted to an adult inpatient bed on the previous calendar day who had confirmed COVID-19 at the time of admission in this state.
+previous_day_admission_adult_covid_confirmed_coverage: Number of hospitals reporting "previous_day_admission_adult_covid_suspected" in this state.
+previous_day_admission_pediatric_covid_confirmed: Number of patients who were admitted to an adult inpatient bed on the previous calendar day who had confirmed COVID-19 at the time of admission in this state
+previous_day_admission_pediatric_covid_confirmed_coverage: Number of hospitals reporting "previous_day_admission_adult_covid_suspected" in this state.
+staffed_adult_icu_bed_occupancy: Reported total number of staffed inpatient adult ICU beds that are occupied in this state.
+total_staffed_adult_icu_beds: Reported total number of staffed inpatient adult ICU beds in this state.
+total_staffed_adult_icu_beds_coverage: Number of hospitals reporting "total_staffed_adult_icu_beds" in this state
+inpatient_beds_utilization: Percentage of inpatient beds that are being utilized in this state. This number only accounts for hospitals in the state that report both "inpatient_beds_used" and "inpatient_beds" fields.
+inpatient_beds_utilization_coverage: Number of hospitals reporting both "inpatient_beds_used" and "inpatient_beds".
+percent_of_inpatients_with_covid: Percentage of inpatient population who have suspected or confirmed COVID-19 in this state. This number only accounts for hospitals in the state that report both "inpatient_beds_used_covid" and "inpatient_beds_used" fields.
+percent_of_inpatients_with_covid_coverage: Number of hospitals reporting both "inpatient_beds_used_covid" and "inpatient_beds_used".
+inpatient_bed_covid_utilization: Percentage of total (used/available) inpatient beds currently utilized by patients who have suspected or confirmed COVID-19 in this state. This number only accounts for hospitals in the state that report both "inpatient_beds_used_covid" and "inpatient_beds" fields.
+inpatient_bed_covid_utilization_coverage: Number of hospitals reporting both "inpatient_beds_used_covid" and "inpatient_beds".
+adult_icu_bed_covid_utilization: Percentage of total staffed adult ICU beds currently utilized by patients who have suspected or confirmed COVID-19 in this state. This number only accounts for hospitals in the state that report both "staffed_icu_adult_patients_confirmed_and_suspected_covid" and "total_staffed_adult_icu_beds" fields.
+adult_icu_bed_covid_utilization_coverage: Number of hospitals reporting both both "staffed_icu_adult_patients_confirmed_and_suspected_covid" and "total_staffed_adult_icu_beds".
+adult_icu_bed_utilization: Percentage of staffed adult ICU beds that are being utilized in this state. This number only accounts for hospitals in the state that report both "staffed_adult_icu_bed_occupancy" and "total_staffed_adult_icu_beds" fields.
+adult_icu_bed_utilization_coverage: Number of hospitals reporting both both "staffed_adult_icu_bed_occupancy" and "total_staffed_adult_icu_beds".
+deaths_covid: Number of patients with suspected or confirmed COVID-19 who died on the previous calendar day in the hospital, ED, or overflow location.
+deaths_covid_coverage: The number of hospital facilities that reported deaths_covid for the given time period.
+
+isBurden: Boolean metric, developed using criteria set by HHS.  HHS has studied the relationship between hospital bed use and hospital strain and has identified occupancy >80% as an indicator of a strained condition.
+SDI: Number for Social Deprivation Index in each state. A composite measure of area level deprivation based on seven demographic characteristics collected in the American Community Survey and used to quantify the socio-economic variation in health outcomes.
+Population Density: Number representing population density by State.
+total_hospitals: Number of hospitals per state from Kaiser Family Foundation.
